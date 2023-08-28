@@ -19,10 +19,10 @@ def register():
     new_user = Users(
         name=data['name'],
         email=data['email'],
-        password=hashed_password,
+        password=hashed_password, 
         user_type=1, 
         created_at=create_at,
-        updated_at=update_at
+        updated_at=update_at 
     ) 
     
     db.session.add(new_user)
