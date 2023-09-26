@@ -9,7 +9,7 @@ def University_Details():
     return json.jsonify(result)
 
 
-@jwt_required() 
+
 def add_university():
     data = request.json
 
@@ -47,7 +47,7 @@ def add_university():
 
     return json.jsonify({"message":'University added successfully',"university":result1,"Ranking":result2,"News":result3,"Collaboration":result4})
 
-@jwt_required()
+
 def add_course():
     data = request.json
      
@@ -72,7 +72,7 @@ def add_course():
     course_schema = CoursesSchema()
     fee_schema = FeesSchema()
     prospect_schema = ProspectSchema()
-
+ 
     result1 = course_schema.dump(course)
     result2 = fee_schema.dump(fee)
     result3 = prospect_schema.dump(prospect)

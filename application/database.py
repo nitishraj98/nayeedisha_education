@@ -9,7 +9,7 @@ from marshmallow import Schema, fields
 
 
 
-mysqlNayeedisha = parseConfig("nayeedishadb","/home/nitish/Documents/NayeeDisha/nayeedisha.conf","=","mysql")
+mysqlNayeedisha = parseConfig("nayeedishadb","/home/ubuntu/Documents/NayeeDisha/nayeedisha.conf","=","mysql")
 
 
 print(

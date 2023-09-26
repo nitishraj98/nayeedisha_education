@@ -3,7 +3,7 @@ from application.controller.usercontroller import *
 from application import app
 
 # API for university details
-@app.route('/universitydetails', methods=['GET'])
+@app.route('/universitydetails', methods=['POST'])
 def universitydetails_route():
     return University_Details() 
 

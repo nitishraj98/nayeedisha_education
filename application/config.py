@@ -15,7 +15,7 @@ class parseConfig:
         if app == 'misc':
             self.jwt_key = config.get(context, 'jwt_key')
             self.secret_key = config.get(context,'secret_key')
-jwt_secret = parseConfig("general","/home/nitish/Documents/NayeeDisha/nayeedisha.conf","=","misc")
+jwt_secret = parseConfig("general","/home/ubuntu/Documents/NayeeDisha/nayeedisha.conf","=","misc")
 
 app.config.update(
     TESTING = True,
