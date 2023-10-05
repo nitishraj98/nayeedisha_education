@@ -9,7 +9,7 @@ def University_Details():
     return json.jsonify(result)
 
 
-
+  
 def add_university():
     data = request.json
 
